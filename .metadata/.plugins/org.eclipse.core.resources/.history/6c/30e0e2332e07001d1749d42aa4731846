@@ -8,8 +8,6 @@ public class tute {
 //  odd or even - check the last bits of numbers , i flast bit is  0 even , last bit is 1 odd , can be checked by and operation 
 	
 	
-//	swapping of numbers using xor operator -many more sums cna be solved easily using the xor operaotr
-	
-	
+//	swapping of numbers using xor operator 
 
 }
