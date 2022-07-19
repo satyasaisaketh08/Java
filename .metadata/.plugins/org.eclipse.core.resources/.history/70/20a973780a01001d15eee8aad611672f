@@ -1,0 +1,44 @@
+package queue;
+
+import java.util.*;
+
+public class first_neg_num {
+	
+	// Constructor class
+	
+//	static Queue <Integer> Q;
+//
+//	public first_neg_num() {
+//		Q = new LinkedList<>();
+//	}
+	
+	public static void solve(int[] arr , int k) {
+		Queue <Integer> Q = new LinkedList<>();
+		for(int i=0;i<k;i++) {
+			if(arr[i]  <0) {
+				Q.add(i);
+			}
+		}
+//		System.out.println(Q);
+		
+		for(int s=1;s<=arr.length-k;s++) {
+			int end = s + k -1;
+			if(arr[end] < 0) {
+				Q.add(end);
+			}
+			if(!Q.isEmpty() && Q.peek() == s -1 ) {
+				Q.poll();
+			}
+			System.out.println();
+		}
+	}
+	
+	public static void main(String[] args) {
+		int[] arr = {-20,10,-5,4,6,-9,-80,60,50};
+		int k = 3;
+		solve(arr,k);
+	}
+	
+	
+
+}

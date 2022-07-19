@@ -1,0 +1,8 @@
+package bit_masking;
+
+public class tute {
+	
+//	Bit masking helps us in reducing time complexity as it is very less time consumign and computationally super fast
+//	We can do masking sums liek odd or even  
+
+}

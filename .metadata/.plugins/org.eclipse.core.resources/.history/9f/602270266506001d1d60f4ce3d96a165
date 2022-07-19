@@ -1,0 +1,31 @@
+package stack;
+import java.util.*;
+public class stocks_span {
+	
+	public static void main(String args[]) throws Exception {
+		// Your Code Here
+		Scanner s = new Scanner(System.in);
+		int N=s.nextInt();
+		Main mainobj = new Main();
+		int[] prices=new int[N];
+		for(int i=0;i<N;i++){
+			prices[i]=s.nextInt();
+		}
+		StacksUsingArrays stack = mainobj.new StacksUsingArrays(prices.length);
+		int[] ans=StockSpanUsingStacks(prices, stack);
+		for(int i=0;i<ans.length;i++){
+			System.out.print(ans[i]+" ");
+		}
+		System.out.println("END");
+
+	}
+
+	public static void solve(int[] arr) {
+		// TODO Auto-generated method stub
+		for(int i=0;i<arr.length;i++) {
+			
+		}
+		
+	}
+
+}

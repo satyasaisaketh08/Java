@@ -1,0 +1,44 @@
+thread-  path folowed when executing a progrma. 
+
+to find the length od string str  =   str.length() - lenght is  a function here 
+
+but in case of arrray - we just use arr.length - hetre length is a variable 
+
+
+wraper class =  int to Integer , it wrpas the primitive data tyoes into a class 
+
+Striings and stiring builder 
+
+strings are immutable and not iterable 
+
+object -  value assigned to a particular reference variable 
+
+using a new value creates a new reference outside the pool
+
+eg  -  int a = new int(8);
+rg - String name = new String("Saketh);
+
+print stream class 
+
+.equals method - to check wether to stringsd are same or not 
+. equlas is the optimal method to check this type 
+
+pretty printing in java 
+format specifiers , place holders ( similar to formatted strings)
+
+strings cannot be changed when once declared 
+
+.equals , .toString()
+
+string builder - helps us to modify the string and do operations
+
+StringBuilder sb= new StringBuilder(); - declaration method 
+
+it helps us to add other datatypes , modify , delte 
+sb.reverse etc.. can be used 
+
+String Methods - 
+tostring , index of , charAt , toLoweCase
+
+
+

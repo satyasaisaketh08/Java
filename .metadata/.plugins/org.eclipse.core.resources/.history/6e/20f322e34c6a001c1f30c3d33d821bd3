@@ -1,0 +1,15 @@
+package tute;
+
+public class gcd {
+public static void main(String[] args) {
+	int divisor = 10;
+	int dividend = 20;
+	
+	while(true) {
+		int rem = dividend % divisor ;
+		dividend = divisor;
+		divisor = rem;
+	}
+	System.out.println(dividend);
+}
+}

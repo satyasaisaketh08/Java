@@ -1,0 +1,22 @@
+package queue;
+import java.util.*;
+public class queue_game {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int tc = sc.nextInt();
+		while(tc>0) {
+			int size = sc.nextInt();
+			int[] arr = new int[size];
+			for(int i = 0;i<size;i++) {
+				arr[i] = sc.nextInt();
+			}
+		}
+	}
+	
+	public static void solve(String s) {
+		Queue<Integer> Q = new LinkedList<Integer>();
+		
+	}
+
+}

@@ -1,0 +1,93 @@
+package linked_lists;
+
+public class demo {
+
+	class Node {
+		public Node(int ali) {
+			// TODO Auto-generated constructor stub
+			data = ali;
+		}
+
+		int data;
+		Node next;
+	}
+
+	Node head;
+
+	public void disp() {
+		Node temp = head;
+		while (temp != null) {
+			System.out.print(temp.data + " ");
+			temp = temp.next;
+		}
+		System.out.println();
+	}
+
+	public int size() {
+		Node temp = head;
+		int size = 0;
+		while (temp != null) {
+//			System.out.print(temp.data+" ");
+			temp = temp.next;
+			size++;
+		}
+		return size;
+
+	}
+
+	public int getfirst() {
+		if(head == null) {
+			throw new RuntimeException ("Your Linked list is empty , cannot retrive element ");
+		}
+		return head.data;
+	}
+
+	private Node getlast() {
+		if(head == null) {
+			throw new RuntimeException ("Your Linked list is empty , cannot retrive element ");
+		}
+		Node temp = head;
+		while (temp.next != null) {
+			temp = temp.next;
+		}
+		return temp;
+	}
+	
+	public int getIdx(int idx) {
+		if (idx<0||idx >= size()) {
+			throw new RuntimeException("Index out of bounds");
+		}
+		Node temp = head;
+
+		for (int i = 0; i < idx; i++) {
+			temp = temp.next;
+		}
+		return temp.data;
+	}
+	
+	public void addLast(int ali) {
+		Node nn = new Node(ali);
+		if(head==null) {
+			head = nn;
+			return;
+		}
+		Node last = getlast();
+		last.next = nn;
+	}
+	
+	public void addFirst(int ele) {
+		Node nn = new Node(ele);
+		nn.next = head;
+		head = nn;
+	}
+	
+
+	public void add_at_idx(int idx, int ele){
+		if(idx == 0) {
+			addFirst(ele);
+		}
+	}
+	
+	
+
+}

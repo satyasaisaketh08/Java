@@ -1,0 +1,10 @@
+functional , procedural , oops 
+py - all3 
+java & c++ -  proc&oops 
+
+static - type check at compile time , error at compile time , declare dataypes before only , more control eg- java c , c++
+
+dynamic - type checking at runtime , error might not showtill prog is run , no declaration of datatypes , eg- python 
+
+
+for strings use .eaulsto comapre instead of  "=="

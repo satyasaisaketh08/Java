@@ -1,0 +1,23 @@
+package recursion;
+import java.util.*;
+public class k_swaps {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		String n = sc.next();
+		int k = sc.nextInt();
+	}
+	
+	public static void swap(char[] arr,int i , int j) {
+		
+		char temp = arr[i];
+		arr[i] = arr[j];
+		arr[j] = temp;
+		
+	}
+	
+	
+
+}

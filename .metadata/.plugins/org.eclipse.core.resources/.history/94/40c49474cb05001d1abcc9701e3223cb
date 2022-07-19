@@ -1,0 +1,6 @@
+package linked_lists;
+import java.util.LinkedList;
+public class rev_ll {
+	LinkedList<String> ll = new LinkedList<String>();
+	ll.add(0,10);
+}

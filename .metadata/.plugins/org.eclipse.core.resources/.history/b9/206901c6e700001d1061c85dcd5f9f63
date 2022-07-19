@@ -1,0 +1,16 @@
+package stack;
+import java.util.*;
+public class min_stack {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Stack<Integer> s1 =  new Stack<Integer>();
+		
+		s1.add(1);
+		s1.add(2);
+		s1.peek();
+
+	}
+
+}

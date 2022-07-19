@@ -1,0 +1,8 @@
+scope of varaibles -  in java
+functions and methods - limitations
+types of memory -  stack and heap 
+stack - storing  function frame ( flow of the code)
+heap - global variables are stored in heap 
+
+
+olacmenrt format 

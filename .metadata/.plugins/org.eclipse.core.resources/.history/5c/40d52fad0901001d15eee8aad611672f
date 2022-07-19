@@ -1,0 +1,17 @@
+package queue;
+
+import java.util.*;
+
+public class first_neg_num {
+	
+	// Constructor class
+	
+	Queue <Integer> Q;
+
+	public first_neg_num() {
+		Q = new LinkedList<>();
+	}
+	
+	
+
+}

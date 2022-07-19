@@ -1,0 +1,59 @@
+import java.util.*;
+public class Main {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        String op = sc.nextLine();
+        int n1 = sc.nextInt();
+        int  n2 = sc.nextInt();
+        int sol;
+
+        while(true){
+            if(op == "x" ||  op == "X"){
+                break;
+            }
+            else if(op == "+"){
+                sol = n1+n2;
+                System.out.println(sol);
+            }else if(op == "-"){
+                sol = n1-n2;
+                System.out.println(sol);
+            }else if(op == "*"){
+                sol = n1*n2;
+                System.out.println(sol);
+            }else if(op == "/"){
+                sol = n1/n2;
+                System.out.println(sol);
+            }else if(op == "%"){
+                sol = n1%n2;
+                System.out.println(sol);
+            }else{
+                System.out.println("Invalid Operation. Try again");
+            }
+            
+        }
+
+    }
+}
+
+
+
+
+import java.util.*;
+public class Main {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        long n = sc.nextLong();
+        long rem = 1;
+        long anw = 0;
+        long frem = 1;
+        long finalanw = 0;
+        if(n == 0){
+            anw = 5;
+        }
+        else{
+            while(n>0){
+                rem = n%10;
+                if(rem == 0){
+                    rem = 5;
+                    anw = anw*10 + 5;
+                }

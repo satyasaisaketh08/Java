@@ -1,0 +1,34 @@
+package stack;
+import java.util.*;
+public class stocks_span {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int[] arr = new int[sc.nextInt()];
+		for(int i=0;i<arr.length;i++) {
+			arr[i] = sc.nextInt();
+		}
+		solve(arr);
+		System.out.println("END");
+	}
+
+	public static void solve(int[] arr) {
+		// TODO Auto-generated method stub
+		Stack<Integer> s = new Stack<Integer>();
+		int sum = 1;
+		for(int i=1;i<arr.length-1;i++) {
+			for(int j = i;j<arr.length;j++) {
+				if(arr[j] > arr[i]) {
+					s.push(sum);
+					sum = sum+1;
+				}else {
+					s.add(1);
+				
+			}
+		}
+		}
+		System.out.println(s);
+	}
+}
+		
+

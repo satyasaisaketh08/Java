@@ -1,0 +1,17 @@
+package tute;
+import java.util.*;
+
+public class reverse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int number = sc.nextInt();
+		
+		while (number!=0){
+			int rev = number *10 / number;
+			System.out.println(rev);
+		}
+	}
+
+}

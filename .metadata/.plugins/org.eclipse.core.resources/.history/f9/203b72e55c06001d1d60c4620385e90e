@@ -1,0 +1,39 @@
+package queue;
+import java.util.*;
+public class queue_game {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int tc = sc.nextInt();
+		while(tc>0) {
+			int size = sc.nextInt();
+			int[] arr = new int[size];
+			for(int i = 0;i<size;i++) {
+				arr[i] = sc.nextInt();
+			}
+			if(solve(arr)) {
+				System.out.println("Valid");
+			}else {
+				System.out.println("Invalid");
+			}
+			
+		}
+	}
+	
+	public static boolean solve(int[] arr) {
+		Queue<Integer> Q = new LinkedList<Integer>();
+		
+		for(int i=0;i<arr.length;i++) {
+			if(arr[i] == 1) {
+				Q.add(0);
+			}if(arr[i] == 0){
+				if(Q.isEmpty()) {
+					Q.poll();
+					return false;
+				}
+			}
+		}
+		return true;
+		
+	}
+}

@@ -1,0 +1,16 @@
+Arrays class - 
+
+note : -  == wont work in arrays and strings beacuse it wont be chekcing the elements , i will be checking the address  so if arrays are same also we will be returining false as the adress are different 
+
+.equals - to compare two arrays 
+.sort(sorts the arrays )
+.sort(index 1, index2) - index based sorting
+.binary search(Arr, element)
+Arrays.fill(arr nme ,from index,toindex, what is to be filled )
+
+variable length arguments  - only one allowed in a method 
+
+declaration - 
+
+public static int sum(int ...nums ){
+} 

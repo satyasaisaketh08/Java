@@ -1,0 +1,28 @@
+package tute;
+import java.util.*;
+
+public class prime {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int number = sc.nextInt();
+		int i = 1;
+		
+		while(i<=number){
+			 if (number % i == 0) {
+			        //System.out.print(i + " ");
+			        
+			      }
+			 i++;
+		}
+		
+		if (i<=2) {
+			System.out.println("prime number");
+		}else {
+			System.out.println("not prime");
+		}
+		
+	}
+
+}

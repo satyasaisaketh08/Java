@@ -1,0 +1,25 @@
+Arrays (non-primitive)-  everything should be of same data type , homogenous , contigous 
+
+int arr[] = new int[10]; - new creates memory in the healp memory 
+
+to search for elemnt at cetainposition - (x+4)*index
+
+enhanced loop - for each 
+
+copying of the loop -  we can copy the loomlike
+
+int other = arr[]
+
+so now if we change the other[1] , it will also reflect it in the main arr array as it having same address 
+
+chnages in heap memory persists 
+
+memory allocation is dynamic 
+objects are stored in heap 
+the arrays in java are not continouss
+
+int defaut - 0
+ch default - space
+string default - null
+
+we change arrays to strings and print it in the form of strings using Arrays.toString(arr) method 

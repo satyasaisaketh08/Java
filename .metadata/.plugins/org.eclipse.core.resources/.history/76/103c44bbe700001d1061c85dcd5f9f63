@@ -1,0 +1,10 @@
+package stack;
+import java.util.*;
+public class min_stack {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

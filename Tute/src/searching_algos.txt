@@ -1,0 +1,9 @@
+Searching Algorithms - Linear , Binary
+
+Time complexity - How my time is increaisn with the increase of input size.
+
+1) Linear Search - Straight forward search 
+Best case O(1) - Found at the first place(0th index)
+
+Worst case O(n) - Element not present in array , Present at the size of array (last) 
+

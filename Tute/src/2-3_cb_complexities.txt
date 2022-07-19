@@ -1,0 +1,7 @@
+Asymptotic analysis - time complexities 
+
+When the n is tending ton infinity discard the rest of equatin take the rest of the equaltion
+
+order of consideration for time complexities - 
+
+o(1)  < 0(log n ) < o(rooot n) < o(n)  < 0(nlogn) < 0(n2) < 0(n2 logn ) < 0(n3) < 0(cn) < o(n!)  < 0(nn) 

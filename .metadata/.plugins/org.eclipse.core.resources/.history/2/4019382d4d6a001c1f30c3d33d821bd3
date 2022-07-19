@@ -1,0 +1,11 @@
+package tute;
+
+public class gcd {
+public static void main(String[] args) {
+	int divisor = 10;
+	int dividend = 20;
+	
+	
+
+	}
+}

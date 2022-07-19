@@ -1,0 +1,5 @@
+As list method uses and implementation
+
+Integer arr[] = new Integer[] {1,2,3};
+		List<Integer> lst = Arrays.asList(arr);
+		System.out.println(lst);
