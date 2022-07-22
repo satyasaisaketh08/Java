@@ -1,0 +1,22 @@
+package sliding_window_sums;
+import java.util.*;
+public class first_neg_in_windowk {
+	
+	public static void main(String[] args) {
+		int k = 2;
+		int[] arr = {-8,2,3,-6,10};
+		
+		System.out.println(solve(k,arr));
+	}
+	
+	private static int solve(int k , int[] arr) {
+		// TODO Auto-generated method stub
+		
+		Stack<Integer> S = new Stack<>();
+
+		
+		
+
+	}
+
+}

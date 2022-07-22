@@ -1,0 +1,70 @@
+package linked_lists;
+
+// Reference - https://www.geeksforgeeks.org/linked-list-in-java/
+
+public class linkedlist{
+	
+	 class Node{
+		int data;
+		Node next;
+	}
+	Node head;
+	public void disp() {
+		Node temp = head;
+		
+		while(temp != null) {
+			System.out.println(temp.data);
+			temp = temp.next;
+		}
+	}
+	
+	public int size() {
+		Node temp = head;
+		int count = 0;
+		while(temp != null) {
+			System.out.println(temp.data);
+			temp = temp.next;
+			count++;
+		}
+		return count;
+	}
+	
+	public int getfirst() {
+		return head.data;
+	}
+	
+	public int getlast() {
+		Node temp = head;
+		
+		while(temp.next != null) {
+			temp = temp.next;
+		}
+		
+		return temp.data;
+	}
+	
+	public int getlastnode(){
+		Node temp = head;
+		while(temp.next != null) {
+			temp  = temp.next;
+		}
+		return temp;
+	}
+	
+	public int getat(int idx) {
+		Node temp = head;
+		
+		for(int i=0;i<idx;i++) {
+			temp = temp.next;
+		}
+		return temp.data;
+	}
+	
+	
+	public int addlast(int element) {
+		Node toadd = new Node(element);
+		Node last = getlastnode();
+		last.next = toadd;
+		
+	}
+}

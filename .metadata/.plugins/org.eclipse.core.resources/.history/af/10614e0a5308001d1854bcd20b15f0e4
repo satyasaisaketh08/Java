@@ -1,0 +1,9 @@
+package sliding_window_sums;
+
+public class concept {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

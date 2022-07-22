@@ -5,7 +5,12 @@ import java.util.*;
 public class next_greatest_ele {
 
 	public static void main(String[] args) {
-		int[] arr = { 1, 2, 4, 3, 5 };
+		Scanner sc = new Scanner(System.in);
+		int size = sc.nextInt();
+		int[] arr = new int[size];
+		for(int i=0;i<size;i++) {
+			arr[i] = sc.nextInt();
+		}
 		Nxtgr8(arr);
 	}
 
@@ -18,13 +23,13 @@ public class next_greatest_ele {
 
 			while (!S.isEmpty() && S.peek() < var) {
 //				var is the next greater of temp!!
-				System.out.println(S.pop() + "=>" + var);
+				System.out.print(var+" ");
 			}
 
 			S.add(var);
 		}
 		while (!S.isEmpty()) {
-			System.out.println(S.pop() + "=>" + -1);
+			System.out.print(-1 + " ");
 		}
 	}
 	

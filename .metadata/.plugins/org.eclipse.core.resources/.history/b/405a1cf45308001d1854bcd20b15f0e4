@@ -1,0 +1,20 @@
+package sliding_window_sums;
+
+public class maximum_sum_subarrk {
+	
+	public static void main(String[] args) {
+		int[] arr = {100, 200, 300, 400};
+		int k = 2;
+		System.out.println(solve(arr,k));
+	}
+	
+	public static int solve(int[] arr , int k) {
+		// TODO Auto-generated method stub
+		if(arr.length == 0 || k == 0) {
+			return 0;
+		}else {
+			
+		}
+	}
+
+}

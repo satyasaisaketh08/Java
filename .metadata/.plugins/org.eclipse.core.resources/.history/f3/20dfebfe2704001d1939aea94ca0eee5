@@ -1,7 +1,0 @@
-package linked_lists;
-import java.util.LinkedList;
-public class rev_ll {
-	LinkedList<Integer> ll = new LinkedList<Integer>();
-	
-
-}

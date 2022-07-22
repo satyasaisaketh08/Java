@@ -1,0 +1,141 @@
+package linked_lists;
+
+// Reference - https://www.geeksforgeeks.org/linked-list-in-java/
+
+public class linkedlist {
+
+	class Node {
+		public Node(int element) {
+			data = element;
+		}
+
+		int data;
+		Node next;
+	}
+
+	Node head;
+
+	public void disp() {
+		Node temp = head;
+
+		while (temp != null) {
+			System.out.println(temp.data);
+			temp = temp.next;
+		}
+	}
+
+	public int size() {
+		Node temp = head;
+		int count = 0;
+		while (temp != null) {
+			System.out.println(temp.data);
+			temp = temp.next;
+			count++;
+		}
+		return count;
+	}
+
+	public int getfirst() {
+		if(head == null) {
+			throw new RuntimeException("LL contains only one node");
+		}
+		return head.data;
+	}
+
+	public Node getfirstnode() {
+		return head;
+	}
+
+	public int getlast() {
+		Node temp = head;
+
+		while (temp.next != null) {
+			temp = temp.next;
+		}
+
+		return temp.data;
+	}
+
+	public Node getlastnode() {
+		Node temp = head;
+		while (temp.next != null) {
+			temp = temp.next;
+		}
+		return temp;
+	}
+
+	public int getat(int idx) {
+		Node temp = head;
+
+		for (int i = 0; i < idx; i++) {
+			temp = temp.next;
+		}
+		return temp.data;
+	}
+	
+	private Node getidxnode(int idx) {
+		if (idx < 0 || idx >= size()) {
+			throw new RuntimeException("Indx out of bounds");
+		}
+		Node temp = head;
+
+		for (int i = 0; i < idx; i++) {
+			temp = temp.next;
+		}
+		return temp;
+	}
+
+	public void addlast(int element) {
+		Node toadd = new Node(element);
+		if(head==null) {
+			head=toadd;
+			return;
+		}else {
+			Node last = getlastnode();
+			last.next = toadd;
+		}
+		
+
+	}
+
+	public void addfirst(int element) {
+		Node toadd = new Node(element);
+		Node first = getfirstnode();
+		first.next = toadd;
+		head = toadd;
+	}
+	
+	public void addat(int idx , int element) {
+		if(idx == 0) {
+			addfirst(element);
+		}else if(idx == size()) {
+			addlast(element);
+		}else if(idx > size()) {
+			throw new RuntimeException("invalid index");
+		}else {
+			Node nn = new Node(element);
+			Node prev = getidxnode(idx-1);
+			
+			Node curr = prev.next;
+			prev.next = nn;
+			nn.next = curr;
+		}
+		
+	}
+	
+	public int removefirst() {
+		Node temp = head;
+		head = head.next;
+		return temp.data;
+	}
+	
+	public int removeat(int idx) {
+		 Node prev = getidxnode(idx - 1);
+		 Node curr = prev.next;
+		 Node ahead = curr.next;
+		 prev.next = ahead;
+		 return curr.data;
+	}
+	
+	
+}

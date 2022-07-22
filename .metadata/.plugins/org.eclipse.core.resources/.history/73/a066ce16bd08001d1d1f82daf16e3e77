@@ -1,0 +1,17 @@
+package Hashmaps;
+import java.util.*;
+public class union_of_arr {
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	private static void solve(int[] arr) {
+		// TODO Auto-generated method stub
+		
+		HashSet<Integer> s = new HashSet<>();
+		
+		
+	}
+
+}

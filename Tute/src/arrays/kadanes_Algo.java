@@ -4,7 +4,7 @@ public class kadanes_Algo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] arr = { 11, 2, -3, 8, 5, -28, 7, 4, -11 };
+		int[] arr = { -2,1,-3,4,-1,2,1,-5,4 };
 		System.out.println(maxSum(arr));
 	}
 

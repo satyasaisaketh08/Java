@@ -1,0 +1,9 @@
+package linked_lists;
+
+public class Client {
+	
+	linkedlist s1 = new linkedlist();
+	s1.
+	ll.disp();
+
+}

@@ -1,0 +1,18 @@
+package linked_lists;
+
+public class Client {
+	public static void main(String[] args) {
+		linkedlist s1 = new linkedlist();
+		s1.addlast(10);
+		s1.addlast(20);
+		s1.addlast(30);
+		s1.addlast(40);
+//		s1.reverse_ll_recur();
+		s1.head = s1.reverse_ll_recur(s1.head);
+		s1.disp();
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,17 @@
+package sliding_window_sums;
+
+public class first_neg_in_windowk {
+	
+	public static void main(String[] args) {
+		int k = 2;
+		int[] arr = {-8,2,3,-6,10};
+	}
+	
+	private void solve() {
+		// TODO Auto-generated method stub
+		
+		
+
+	}
+
+}

@@ -1,0 +1,34 @@
+package Hashmaps;
+
+import java.util.HashSet;
+
+public class intersection_of_arr {
+
+//	Unique elements from both the arrays 
+
+	public static void main(String[] args) {
+		int[] a = { 3, 4, 6, 2, 8, 5, 9 };
+		int[] b = { 6, 3, 2, 7, 5, 1};
+
+		solve(a, b);
+	}
+
+	private static void solve(int[] a, int[] b) {
+		// TODO Auto-generated method stub
+
+		HashSet<Integer> s = new HashSet<>();
+		int count = 0;
+		for (int x : a) {
+			s.add(x);
+		}
+
+		for (int x : b) {
+			if (s.contains(x)) {
+				count++;
+				s.remove(x);
+			}
+		}
+		System.out.println(count);
+		System.out.println(s);
+	}
+}

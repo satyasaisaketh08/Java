@@ -1,0 +1,15 @@
+package Hashmaps;
+import java.util.*;
+public class count_distinct__ele {
+	
+	public static void main(String[] args) {
+		int[] arr = {1,2,3,1,2,3};
+		solve(arr);
+	}
+	
+	private void solve() {
+		// TODO Auto-generated method stub
+		Hash
+	}
+
+}

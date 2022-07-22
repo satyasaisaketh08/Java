@@ -1,0 +1,17 @@
+package Hashmaps;
+
+public class intersection_of_arr {
+	
+	public static void main(String[] args) {
+		
+		String s = "laghima";
+		char[] arr = s.toCharArray();
+		
+		arr[0] = 'm';
+		
+		String ss = new String(arr);
+		
+		System.out.println(s);
+		System.out.println(ss);
+	}
+}

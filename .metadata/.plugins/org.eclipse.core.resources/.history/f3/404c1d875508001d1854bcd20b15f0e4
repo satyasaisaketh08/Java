@@ -1,0 +1,16 @@
+package sliding_window_sums;
+
+public class first_neg_in_windowk {
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	private void solve() {
+		// TODO Auto-generated method stub
+		
+		
+
+	}
+
+}
